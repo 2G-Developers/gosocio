@@ -3,13 +3,13 @@
 
     &__form {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         grid-gap: 2rem;
 
-        @include respond(phone) {
-            display: flex;
-            flex-wrap: wrap;
-        }
+        // @include respond(phone) {
+        //     display: flex;
+        //     flex-wrap: wrap;
+        // }
     
     }
 
