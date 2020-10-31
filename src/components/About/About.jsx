@@ -33,16 +33,16 @@ function About() {
                              withoutControls={true}
                              wrapAround={true}
                             >
-                                <img src={raziya} className="img-fluid" alt="Raziya" />
-                                <img src={amaas} className="img-fluid" alt="Amaas" />
-                                <img src={Skylon2} className="img-fluid" alt="Skylon" />
-                                <img src={sooja} className="img-fluid" alt="Sooja" />
+                                <img src={raziya} className="img-fluid small-margin" alt="Raziya" />
+                                <img src={amaas} className="img-fluid small-margin" alt="Amaas" />
+                                <img src={Skylon2} className="img-fluid small-margin" alt="Skylon" />
+                                <img src={sooja} className="img-fluid small-margin" alt="Sooja" />
                             </Carousel>
                         </div>
                     </div>
                     <div className="col-md-4">
                         <div className="about__img">
-                            <img src={hair} className="img-fluid" alt="The Hair Experts" />
+                            <img src={hair} className="img-fluid small-margin" alt="The Hair Experts" />
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ function About() {
                 <div className="row mt-3">
                     <div className="col-md-4">
                         <div className="about__img">
-                            <img src={skylon} className="img-fluid" alt="Skylon" />
+                            <img src={skylon} className="img-fluid small-margin" alt="Skylon" />
                         </div>
                     </div>
                     <div className="col-md-8">
@@ -61,10 +61,10 @@ function About() {
                              withoutControls={true}
                              wrapAround={true}
                             >
-                                <img src={Skylon2} className="img-fluid" alt="Skylon" />
-                                <img src={sooja} className="img-fluid" alt="Sooja" />
-                                <img src={amaas} className="img-fluid" alt="Amaas" />
-                                <img src={raziya} className="img-fluid" alt="Raziya" />
+                                <img src={Skylon2} className="img-fluid small-margin" alt="Skylon" />
+                                <img src={sooja} className="img-fluid small-margin" alt="Sooja" />
+                                <img src={amaas} className="img-fluid small-margin" alt="Amaas" />
+                                <img src={raziya} className="img-fluid small-margin" alt="Raziya" />
                             </Carousel>
                         </div>
                     </div>
@@ -79,16 +79,16 @@ function About() {
                              withoutControls={true}
                              wrapAround={true}
                             >
-                                <img src={sooja} className="img-fluid" alt="Sooja" />
-                                <img src={Skylon2} className="img-fluid" alt="Skylon" />
-                                <img src={raziya} className="img-fluid" alt="Raziya" />
-                                <img src={amaas} className="img-fluid" alt="Amaas" />
+                                <img src={sooja} className="img-fluid small-margin" alt="Sooja" />
+                                <img src={Skylon2} className="img-fluid small-margin" alt="Skylon" />
+                                <img src={raziya} className="img-fluid small-margin" alt="Raziya" />
+                                <img src={amaas} className="img-fluid small-margin" alt="Amaas" />
                             </Carousel>
                         </div>
                     </div>
                     <div className="col-md-4">
                         <div className="about__img">
-                            <img src={couchy} className="img-fluid" alt="Couchy" />
+                            <img src={couchy} className="img-fluid small-margin" alt="Couchy" />
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ function About() {
                 <div className="row mt-3">
                     <div className="col-md-4">
                         <div className="about__img">
-                            <img src={vr} className="img-fluid" alt="Skylon VR" />
+                            <img src={vr} className="img-fluid small-margin" alt="Skylon VR" />
                         </div>
                     </div>
                     <div className="col-md-8">
@@ -107,10 +107,10 @@ function About() {
                              withoutControls={true}
                              wrapAround={true}
                             >
-                                <img src={amaas} className="img-fluid" alt="Amaas" />
-                                <img src={raziya} className="img-fluid" alt="Raziya" />
-                                <img src={sooja} className="img-fluid" alt="Sooja" />
-                                <img src={Skylon2} className="img-fluid" alt="Skylon" />
+                                <img src={amaas} className="img-fluid small-margin" alt="Amaas" />
+                                <img src={raziya} className="img-fluid small-margin" alt="Raziya" />
+                                <img src={sooja} className="img-fluid small-margin" alt="Sooja" />
+                                <img src={Skylon2} className="img-fluid small-margin" alt="Skylon" />
                             </Carousel>
                         </div>
                     </div>
