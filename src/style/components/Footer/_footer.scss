@@ -1,0 +1,29 @@
+.footer {
+    background: #000;
+    padding: 2rem 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text {
+        color: #fff;
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link {
+        text-decoration: none;
+
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}

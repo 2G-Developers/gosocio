@@ -1,0 +1,22 @@
+import React from 'react'
+import Carousel from '../../components/Carousel/Carousel'
+import Enquiry from '../../components/Enquiry/Enquiry'
+import Footer from '../../components/Footer/Footer'
+import Location from '../../components/Location/Location'
+import Contact from '../../images/contact.png'
+
+function ContactPage() {
+    return (
+        <>
+            <Carousel images={Contact} 
+                altText="Contact" 
+                heading="Ready to fly digitally with us? Let's talk!" 
+                subheading="Kindly fill in your details in the relevant container below or contact us at info@gosociobutterfly.com" />
+            <Enquiry />
+            <Location />
+            <Footer />
+        </>
+    )
+}
+
+export default ContactPage

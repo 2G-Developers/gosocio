@@ -1,0 +1,37 @@
+.service {
+
+    &__card {
+        margin-bottom: 3rem;
+        border-top: 1.5px solid #1d1d1f;
+        padding-top: 1rem;
+
+        &-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+
+            h4 {
+                color: #EB4D37;
+                margin: 0;
+                margin-left: 1rem;
+            }
+        }
+
+        &-body {
+            text-align: left;
+            font-size: .875rem;
+        }
+    }
+
+    &__text {
+        text-align: left;
+    }
+
+    &__header {
+        margin: 3rem 0 4rem 0;
+    }
+}
+
+.martop {
+    margin-top: 4rem;
+}

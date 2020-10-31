@@ -1,0 +1,46 @@
+.hero {
+    position: relative;
+
+    &__img {
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        h3 {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 3.5rem;
+            margin-bottom: 0;
+
+            @include respond(tab-port) {
+                font-size: 1.5rem;
+            }
+        }
+
+        p {
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 0;
+            @include respond(tab-port) {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(235, 77, 55, .5);
+}

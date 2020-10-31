@@ -1,0 +1,79 @@
+.enquiry {
+    margin: 5rem 0;
+
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+
+        @include respond(phone) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+    }
+
+    &__input {
+        outline: none;
+        border: none;
+        padding: .4rem 0;
+        font-size: .875rem;
+        color: #cbcbcb;
+        border-bottom: 1px solid #cbcbcb;
+
+        &:disabled {
+            background: transparent;
+        }
+
+        &::placeholder {
+            color: #cbcbcb;
+        }
+    }
+
+    &__tabs {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.5rem;
+        color: #ababab;
+    }
+
+    &__item {
+        border-bottom: 1px solid #fbdbd7;
+        width: 100%;
+        cursor: pointer;
+
+        &--active {
+            border-bottom: 1.5px solid #eb4d37;
+        }
+    }
+
+    &__button {
+        text-align: left;
+        margin-top: 3rem;
+        cursor: pointer;
+
+        &--text {
+            margin-right: 0.5rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #ababab;
+        font-weight: 500;
+
+        &:hover {
+            color: #ababab;
+            text-decoration: none;
+        }
+
+        &--active {
+            color: #eb4d37;
+
+            &:hover {
+                color: #eb4d37;
+            }
+        }
+    }
+}

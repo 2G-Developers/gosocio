@@ -1,0 +1,17 @@
+.about {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    &__heading {
+        margin-bottom: 3rem;
+
+        h3 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__cta {
+        margin-top: 3rem;
+    }
+}
