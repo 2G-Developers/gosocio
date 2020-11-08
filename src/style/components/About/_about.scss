@@ -1,21 +1,25 @@
 .about {
     margin-top: 5rem;
     margin-bottom: 5rem;
+    overflow-x: hidden;
 
     &__heading {
         margin-bottom: 3rem;
 
         h3 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             margin-bottom: 1rem;
         }
+    }
+
+    &__box {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
     }
 
     &__cta {
         margin-top: 3rem;
     }
-}
-
-.small-margin {
-    margin: .5rem 0;
 }

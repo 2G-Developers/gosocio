@@ -1,27 +1,47 @@
 import React from 'react'
-// import {ReactComponent as facebook} from '../../images/facebook.svg'
-// import instagram from '../../images/instagram.svg'
-// import linkedin from '../../images/linkedin.svg'
+import { NavLink } from "react-router-dom";
+
+import {ReactComponent as Facebook} from '../../images/facebook.svg'
+import {ReactComponent as Instagram} from '../../images/instagram.svg'
+import {ReactComponent as Linkedin} from '../../images/linkedin.svg'
 
 function Footer() {
-    let year = new Date().getFullYear();
 
     return (
         <footer id="footer" className="footer">
-            <div className="footer__wrapper">
-                <div className="footer__text">
-                    <span className="year">{year}</span> GO SocioButterfly Pvt Ltd. All Right Reserved.
-                </div>
-                <div className="footer__icon">
-                    {/* <a href="faceboo.com" className="footer__link">
-                        <img src={facebook} alt=""/>
-                    </a>
-                    <a href="faceboo.com">
-                        <img src={instagram} alt="" className="footer__link"/>
-                    </a>
-                    <a href="faceboo.com">
-                        <img src={linkedin} alt="" className="footer__link"/>
-                    </a> */}
+            <div className="container">
+                <div className="row">
+                    <div className="footer__wrapper">
+                        <ul className="footer__nav">
+                            <li className="footer__item">
+                                <NavLink exact activeStyle={{color: "#EB4D37" }} to="/" className="footer__link">Home</NavLink>
+                            </li>
+                            <li className="footer__item">
+                                <NavLink exact activeStyle={{color: "#EB4D37" }} to="/about" className="footer__link">About Us</NavLink>
+                            </li>
+                            <li className="footer__item">
+                                <NavLink exact activeStyle={{color: "#EB4D37" }} to="/contact" className="footer__link">Contact</NavLink>
+                            </li>
+                        </ul>
+
+                        <ul className="footer__nav">
+                            <li className="footer__item footer__item--icon">
+                                <a href="/" className="footer__link">
+                                    <Instagram width="24px" height="24px" fill="#fff" />
+                                </a>
+                            </li>
+                            <li className="footer__item footer__item--icon">
+                                <a href="/" className="footer__link">
+                                    <Facebook width="24px" height="24px" fill="#fff" />
+                                </a>
+                            </li>
+                            <li className="footer__item footer__item--icon">
+                                <a href="/" className="footer__link">
+                                    <Linkedin width="24px" height="24px" fill="#fff" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>

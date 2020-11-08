@@ -4,13 +4,26 @@ import hair from '../../images/hair.png'
 import skylon from '../../images/skylon.png'
 import sooja from '../../images/sooja.png'
 import Skylon2 from '../../images/skylon-2.png'
-import couchy from '../../images/couchy.png'
+// import couchy from '../../images/couchy.png'
 import vr from '../../images/vr.png'
 import amaas from '../../images/amaas.png'
 import Button from '../Button/Button'
-import Carousel from 'nuka-carousel';
+import Zoom from 'react-reveal/Zoom';
+import Slider from "react-slick";
+
+import test1 from '../../images/843x528_1.jpg'
+import test2 from '../../images/418x528_1.jpg'
 
 function About() {
+    const singleSettings = {
+        dots: false,
+        autoplay: true,
+        fade: true,
+        infinite: true,
+        speed: 1500,
+        slidesToShow: 1
+    };
+
     return (
         <section id="about" className="about">
             <div className="container">
@@ -26,93 +39,91 @@ function About() {
                 </div>
                 <div className="row mt-3" style={{justifyContent: "center"}}>
                     <div className="col-md-8">
-                        <div className="about__img">
-                            <Carousel 
-                             autoplay={true}
-                             speed={2000}
-                             withoutControls={true}
-                             wrapAround={true}
-                            >
-                                <img src={raziya} className="img-fluid small-margin" alt="Raziya" />
-                                <img src={amaas} className="img-fluid small-margin" alt="Amaas" />
-                                <img src={Skylon2} className="img-fluid small-margin" alt="Skylon" />
-                                <img src={sooja} className="img-fluid small-margin" alt="Sooja" />
-                            </Carousel>
-                        </div>
+                        <Zoom bottom duration={1000} delay={600}>
+                            <Slider {...singleSettings}>
+                                <div className="about__img">
+                                    <img src={raziya} className="img-fluid small-margin" alt="Raziya" />
+                                </div>
+                                <div className="about__img">
+                                    <img src={amaas} className="img-fluid small-margin" alt="Amaas" />
+                                </div>
+                                <div className="about__img">
+                                    <img src={Skylon2} className="img-fluid small-margin" alt="Skylon" />
+                                </div>
+                                <div className="about__img">
+                                    <img src={sooja} className="img-fluid small-margin" alt="Sooja" />
+                                </div>
+                            </Slider>
+                        </Zoom>
                     </div>
                     <div className="col-md-4">
-                        <div className="about__img">
-                            <img src={hair} className="img-fluid small-margin" alt="The Hair Experts" />
-                        </div>
+                        <Zoom bottom duration={1000} delay={600}>
+                            <div className="about__img">
+                                <img src={hair} className="img-fluid small-margin" alt="The Hair Experts" />
+                            </div>
+                        </Zoom>
                     </div>
                 </div>
 
                 <div className="row mt-3">
                     <div className="col-md-4">
-                        <div className="about__img">
-                            <img src={skylon} className="img-fluid small-margin" alt="Skylon" />
-                        </div>
+                        <Zoom bottom duration={2000} delay={1000}>
+                            <div className="about__img">
+                                <img src={skylon} className="img-fluid small-margin" alt="Skylon" />
+                            </div>
+                        </Zoom>
                     </div>
                     <div className="col-md-8">
-                        <div className="about__img">
-                            <Carousel 
-                             autoplay={true}
-                             speed={2000}
-                             withoutControls={true}
-                             wrapAround={true}
-                            >
+                        <Zoom bottom duration={2000} delay={1000}>
+                            <div className="about__img">
                                 <img src={Skylon2} className="img-fluid small-margin" alt="Skylon" />
-                                <img src={sooja} className="img-fluid small-margin" alt="Sooja" />
-                                <img src={amaas} className="img-fluid small-margin" alt="Amaas" />
-                                <img src={raziya} className="img-fluid small-margin" alt="Raziya" />
-                            </Carousel>
-                        </div>
+                            </div>
+                        </Zoom>
                     </div>
                 </div>
 
                 <div className="row mt-3">
                     <div className="col-md-8">
-                        <div className="about__img">
-                            <Carousel 
-                             autoplay={true}
-                             speed={2000}
-                             withoutControls={true}
-                             wrapAround={true}
-                            >
-                                <img src={sooja} className="img-fluid small-margin" alt="Sooja" />
-                                <img src={Skylon2} className="img-fluid small-margin" alt="Skylon" />
-                                <img src={raziya} className="img-fluid small-margin" alt="Raziya" />
-                                <img src={amaas} className="img-fluid small-margin" alt="Amaas" />
-                            </Carousel>
-                        </div>
+                        <Zoom bottom duration={2000} delay={1400}>
+                            <div className="about__img">
+                                <img src={test1} className="img-fluid small-margin" alt="Raziya" />
+                            </div>
+                        </Zoom>
                     </div>
                     <div className="col-md-4">
-                        <div className="about__img">
-                            <img src={couchy} className="img-fluid small-margin" alt="Couchy" />
-                        </div>
+                        <Zoom bottom duration={2000} delay={1400}>
+                            <div className="about__img">
+                                <img src={test2} className="img-fluid small-margin" alt="Couchy" />
+                            </div>
+                        </Zoom>
                     </div>
                 </div>
 
                 <div className="row mt-3">
                     <div className="col-md-4">
-                        <div className="about__img">
-                            <img src={vr} className="img-fluid small-margin" alt="Skylon VR" />
-                        </div>
+                        <Zoom bottom duration={2000} delay={1800} distance="30px">
+                            <div className="about__img">
+                                <img src={vr} className="img-fluid small-margin" alt="Skylon VR" />
+                            </div>
+                        </Zoom>
                     </div>
                     <div className="col-md-8">
-                        <div className="about__img">
-                            <Carousel 
-                             autoplay={true}
-                             speed={2000}
-                             withoutControls={true}
-                             wrapAround={true}
-                            >
-                                <img src={amaas} className="img-fluid small-margin" alt="Amaas" />
-                                <img src={raziya} className="img-fluid small-margin" alt="Raziya" />
-                                <img src={sooja} className="img-fluid small-margin" alt="Sooja" />
-                                <img src={Skylon2} className="img-fluid small-margin" alt="Skylon" />
-                            </Carousel>
-                        </div>
+                        <Zoom bottom duration={2000} delay={1800}>
+                            <Slider {...singleSettings}>
+                                <div className="about__img">
+                                    <img src={amaas} className="img-fluid small-margin" alt="Amaas" />
+                                </div>
+                                <div className="about__img">
+                                    <img src={raziya} className="img-fluid small-margin" alt="Raziya" />
+                                </div>
+                                <div className="about__img">
+                                    <img src={sooja} className="img-fluid small-margin" alt="Sooja" />
+                                </div>
+                                <div className="about__img">
+                                    <img src={Skylon2} className="img-fluid small-margin" alt="Skylon" />
+                                </div>
+                            </Slider>
+                        </Zoom>
                     </div>
                 </div>
                 <div className="about__cta">

@@ -17,8 +17,8 @@ function Navbar({class1="navbar-list", class2="navbar-list", class3="navbar-list
     </div>  
     <div className="navbar-page" style={{display: showNav ? 'block' : 'none' }}>
         <div id="mdiv" onClick={()=>setShownav(!showNav)}>
-            <div class="mdiv">
-                 <div class="md"></div>
+            <div className="mdiv">
+                 <div className="md"></div>
              </div>
         </div>
         <div className="navbar-content">

@@ -24,6 +24,10 @@
         }
     }
 
+    &__content {
+        padding: 1rem 0;
+    }
+
     &__tabs {
         list-style-type: none;
         display: flex;

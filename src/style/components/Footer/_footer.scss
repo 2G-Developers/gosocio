@@ -1,29 +1,35 @@
 .footer {
-    background: #000;
+    background: #1E1A1B;
     padding: 2rem 0;
 
     &__wrapper {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+        width: 100%;
     }
 
-    &__text {
-        color: #fff;
-    }
-
-    &__icon {
+    &__nav {
+        list-style-type: none;
         display: flex;
         justify-content: center;
-        align-items: center;
+    }
+
+    &__item {
+        color: #fff;
+        margin-right: 3rem;
+
+        &--icon {
+            margin-right: 1rem;
+        }
     }
 
     &__link {
-        text-decoration: none;
+        color: #FFF;
 
-        img {
-            width: 16px;
-            height: 16px;
+        &:hover {
+            text-decoration: none;
+            color: #EB4D37;
         }
     }
 }

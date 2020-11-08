@@ -9,11 +9,12 @@ import Contact from '../../images/contact.png'
 function ContactPage() {
     return (
         <>
-        <Navbar class3="navbar-list-active"/>
+            <Navbar class3="navbar-list-active"/>
             <Carousel images={Contact} 
                 altText="Contact" 
                 heading="Ready to fly digitally with us? Let's talk!" 
-                subheading="Kindly fill in your details in the relevant container below or contact us at info@gosociobutterfly.com" />
+                subheading="Kindly fill in your details in the relevant container below or contact us at"
+                span="info@gosociobutterfly.com" />
             <Enquiry />
             <Location />
             <Footer />

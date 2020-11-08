@@ -1,6 +1,8 @@
 import React from 'react'
 import Central from '../../images/Central.png'
 import Button from '../Button/Button'
+import {ReactComponent as Call} from '../../images/CallIcon.svg'
+import {ReactComponent as LocationIcon} from '../../images/LocationIcon.svg'
 
 function Location() {
     return (
@@ -17,10 +19,10 @@ function Location() {
                             </div>
                             <div className="location__details">
                                 <a href="tel:+918939907815" className="location__link">
-                                    <p>+918939907815</p>
+                                    <p><Call width="16px" height="16px" fill="#EB4D37" /> +918939907815</p>
                                 </a>
                                 <p className="location__address">
-                                    The Executive Zone, Shakti Towers-1, <br />
+                                    <LocationIcon width="16px" height="16px" fill="#EB4D37" /> The Executive Zone, Shakti Towers-1, <br />
                                     766, Anna Salai, Chennai - 600002.
                                 </p>
                                 <div className="location__cta">
