@@ -27,17 +27,17 @@ function Footer() {
                         <ul className="footer__nav">
                             <li className="footer__item footer__item--icon">
                                 <a href="/" className="footer__link">
-                                    <Instagram width="24px" height="24px" fill="#fff" />
+                                    <Instagram width="1rem" height="1rem" fill="#fff" />
                                 </a>
                             </li>
                             <li className="footer__item footer__item--icon">
                                 <a href="/" className="footer__link">
-                                    <Facebook width="24px" height="24px" fill="#fff" />
+                                    <Facebook width="1rem" height="1rem" fill="#fff" />
                                 </a>
                             </li>
                             <li className="footer__item footer__item--icon">
                                 <a href="/" className="footer__link">
-                                    <Linkedin width="24px" height="24px" fill="#fff" />
+                                    <Linkedin width="1rem" height="1rem" fill="#fff" />
                                 </a>
                             </li>
                         </ul>
