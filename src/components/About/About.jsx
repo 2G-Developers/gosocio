@@ -38,7 +38,7 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <div className="row mt-3" style={{justifyContent: "center"}}>
+                <div className="row mt-3" style={{padding: "0 15px"}}>
                     <div className="col-md-8 p-0">
                         <Zoom bottom duration={1000} delay={600}>
                             <Slider {...singleSettings}>
@@ -66,7 +66,7 @@ function About() {
                     </div>
                 </div>
 
-                <div className="row mt-3">
+                <div className="row mt-3" style={{padding: "0 15px"}}>
                     <div className="col-md-4 pl-0">
                         <Zoom bottom duration={2000} delay={1000}>
                             <div className="about__img" style={{backgroundImage: `url('${skylon}')`}}>
@@ -83,7 +83,7 @@ function About() {
                     </div>
                 </div>
 
-                <div className="row mt-3">
+                <div className="row mt-3" style={{padding: "0 15px"}}>
                     <div className="col-md-8 p-0">
                         <Zoom bottom duration={2000} delay={1400}>
                             <div className="about__img">
@@ -100,7 +100,7 @@ function About() {
                     </div>
                 </div>
 
-                <div className="row mt-3">
+                <div className="row mt-3" style={{padding: "0 15px"}}>
                     <div className="col-md-4 pl-0">
                         <Zoom bottom duration={2000} delay={1800} distance="30px">
                             <div className="about__img" style={{backgroundImage: `url('${vr}')`}}>
