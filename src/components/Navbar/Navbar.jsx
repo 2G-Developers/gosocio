@@ -3,12 +3,23 @@ import { Link } from "react-router-dom";
 
 function Navbar({class1="navbar-list", class2="navbar-list", class3="navbar-list"}){
     const [showNav,setShownav ] = useState(false);
+    const [navbar, setNavbar] = useState(false);
+
+    const changeBackground = () => {
+        if(window.scrollY >= 300) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeBackground)
 
     return(
 
     <div className="nav">
 
-    <div className="navbar">
+    <div className={navbar ? 'navbar active': 'navbar'}>
         <div className="navbar-hamburg" onClick={()=>setShownav(!showNav)}>
             <div className="navbar-hamburg-bar"></div>
             <div className="navbar-hamburg-bar"></div>
