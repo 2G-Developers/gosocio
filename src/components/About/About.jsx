@@ -38,7 +38,7 @@ function About() {
                     </div>
                 </div>
                 <div className="row mt-3" style={{justifyContent: "center"}}>
-                    <div className="col-md-8">
+                    <div className="col-md-8 p-0">
                         <Zoom bottom duration={1000} delay={600}>
                             <Slider {...singleSettings}>
                                 <div className="about__img">
@@ -56,24 +56,24 @@ function About() {
                             </Slider>
                         </Zoom>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 pr-0">
                         <Zoom bottom duration={1000} delay={600}>
-                            <div className="about__img">
-                                <img src={hair} className="img-fluid small-margin" alt="The Hair Experts" />
+                            <div className="about__img" style={{backgroundImage: `url('${hair}')`}}>
+                                {/* <img src={hair} className="img-fluid small-margin" alt="The Hair Experts" /> */}
                             </div>
                         </Zoom>
                     </div>
                 </div>
 
                 <div className="row mt-3">
-                    <div className="col-md-4">
+                    <div className="col-md-4 pl-0">
                         <Zoom bottom duration={2000} delay={1000}>
-                            <div className="about__img">
-                                <img src={skylon} className="img-fluid small-margin" alt="Skylon" />
+                            <div className="about__img" style={{backgroundImage: `url('${skylon}')`}}>
+                                {/* <img src={skylon} className="img-fluid small-margin" alt="Skylon" /> */}
                             </div>
                         </Zoom>
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-8 p-0">
                         <Zoom bottom duration={2000} delay={1000}>
                             <div className="about__img">
                                 <img src={Skylon2} className="img-fluid small-margin" alt="Skylon" />
@@ -83,31 +83,31 @@ function About() {
                 </div>
 
                 <div className="row mt-3">
-                    <div className="col-md-8">
+                    <div className="col-md-8 p-0">
                         <Zoom bottom duration={2000} delay={1400}>
                             <div className="about__img">
                                 <img src={test1} className="img-fluid small-margin" alt="Raziya" />
                             </div>
                         </Zoom>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 pr-0">
                         <Zoom bottom duration={2000} delay={1400}>
-                            <div className="about__img">
-                                <img src={test2} className="img-fluid small-margin" alt="Couchy" />
+                            <div className="about__img" style={{backgroundImage: `url('${test2}')`}}>
+                                {/* <img src={test2} className="img-fluid small-margin" alt="Couchy" /> */}
                             </div>
                         </Zoom>
                     </div>
                 </div>
 
                 <div className="row mt-3">
-                    <div className="col-md-4">
+                    <div className="col-md-4 pl-0">
                         <Zoom bottom duration={2000} delay={1800} distance="30px">
-                            <div className="about__img">
-                                <img src={vr} className="img-fluid small-margin" alt="Skylon VR" />
+                            <div className="about__img" style={{backgroundImage: `url('${vr}')`}}>
+                                {/* <img src={vr} className="img-fluid small-margin" alt="Skylon VR" /> */}
                             </div>
                         </Zoom>
                     </div>
-                    <div className="col-md-8">
+                    <div className="col-md-8 p-0">
                         <Zoom bottom duration={2000} delay={1800}>
                             <Slider {...singleSettings}>
                                 <div className="about__img">

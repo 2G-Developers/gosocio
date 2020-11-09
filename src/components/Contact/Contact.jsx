@@ -18,7 +18,6 @@ function Contact({isgrey}) {
         dots: false,
         autoplay: true,
         infinite: true,
-        variableWidth: true,
         slidesToShow: 3,
         speed: 2000,
         autoplaySpeed: 2000,
@@ -28,7 +27,8 @@ function Contact({isgrey}) {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
-                    infinite: true
+                    infinite: true,
+                    variableWidth: true
                 }
             },
             {
