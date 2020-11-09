@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import raziya from '../../images/raziya.png'
 import hair from '../../images/hair.png'
 import skylon from '../../images/skylon.png'
@@ -8,8 +8,11 @@ import Skylon2 from '../../images/skylon-2.png'
 import vr from '../../images/vr.png'
 import amaas from '../../images/amaas.png'
 import Button from '../Button/Button'
-import Zoom from 'react-reveal/Zoom';
+// import Zoom from 'react-reveal/Zoom';
 import Slider from "react-slick";
+
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 import test1 from '../../images/843x528_1.jpg'
 import test2 from '../../images/418x528_1.jpg'
@@ -24,6 +27,13 @@ function About() {
         speed: 1500,
         slidesToShow: 1
     };
+
+    useEffect(() => {
+        Aos.init({
+            duration: 1000,
+
+        })
+    }, [])
 
     return (
         <section id="about" className="about">
@@ -40,7 +50,7 @@ function About() {
                 </div>
                 <div className="row mt-3" style={{padding: "0 15px"}}>
                     <div className="col-md-8 p-0">
-                        <Zoom bottom duration={1000} delay={600}>
+                        <div  data-aos="zoom-in" className="about__wrapper">
                             <Slider {...singleSettings}>
                                 <div className="about__img">
                                     <img src={raziya} className="img-fluid small-margin" alt="Raziya" />
@@ -55,61 +65,61 @@ function About() {
                                     <img src={sooja} className="img-fluid small-margin" alt="Sooja" />
                                 </div>
                             </Slider>
-                        </Zoom>
+                        </div>
                     </div>
                     <div className="col-md-4 pr-0">
-                        <Zoom bottom duration={1000} delay={600}>
+                        <div  data-aos="zoom-in" className="about__wrapper" >
                             <div className="about__img" style={{backgroundImage: `url('${hair}')`}}>
                                 {/* <img src={hair} className="img-fluid small-margin" alt="The Hair Experts" /> */}
                             </div>
-                        </Zoom>
+                        </div>
                     </div>
                 </div>
 
                 <div className="row mt-3" style={{padding: "0 15px"}}>
                     <div className="col-md-4 pl-0">
-                        <Zoom bottom duration={2000} delay={1000}>
+                        <div  data-aos="zoom-in" className="about__wrapper">
                             <div className="about__img" style={{backgroundImage: `url('${skylon}')`}}>
                                 {/* <img src={skylon} className="img-fluid small-margin" alt="Skylon" /> */}
                             </div>
-                        </Zoom>
+                        </div>
                     </div>
                     <div className="col-md-8 p-0">
-                        <Zoom bottom duration={2000} delay={1000}>
+                        <div  data-aos="zoom-in" className="about__wrapper">
                             <div className="about__img">
                                 <img src={Skylon2} className="img-fluid small-margin" alt="Skylon" />
                             </div>
-                        </Zoom>
+                        </div>
                     </div>
                 </div>
 
                 <div className="row mt-3" style={{padding: "0 15px"}}>
                     <div className="col-md-8 p-0">
-                        <Zoom bottom duration={2000} delay={1400}>
+                        <div  data-aos="zoom-in" className="about__wrapper">
                             <div className="about__img">
                                 <img src={test1} className="img-fluid small-margin" alt="Raziya" />
                             </div>
-                        </Zoom>
+                        </div>
                     </div>
                     <div className="col-md-4 pr-0">
-                        <Zoom bottom duration={2000} delay={1400}>
+                        <div  data-aos="zoom-in" className="about__wrapper">
                             <div className="about__img" style={{backgroundImage: `url('${test2}')`}}>
                                 {/* <img src={test2} className="img-fluid small-margin" alt="Couchy" /> */}
                             </div>
-                        </Zoom>
+                        </div>
                     </div>
                 </div>
 
                 <div className="row mt-3" style={{padding: "0 15px"}}>
                     <div className="col-md-4 pl-0">
-                        <Zoom bottom duration={2000} delay={1800} distance="30px">
+                        <div  data-aos="zoom-in" className="about__wrapper">
                             <div className="about__img" style={{backgroundImage: `url('${vr}')`}}>
                                 {/* <img src={vr} className="img-fluid small-margin" alt="Skylon VR" /> */}
                             </div>
-                        </Zoom>
+                        </div>
                     </div>
                     <div className="col-md-8 p-0">
-                        <Zoom bottom duration={2000} delay={1800}>
+                        <div  data-aos="zoom-in" className="about__wrapper">
                             <Slider {...singleSettings}>
                                 <div className="about__img">
                                     <img src={amaas} className="img-fluid small-margin" alt="Amaas" />
@@ -124,7 +134,7 @@ function About() {
                                     <img src={Skylon2} className="img-fluid small-margin" alt="Skylon" />
                                 </div>
                             </Slider>
-                        </Zoom>
+                        </div>
                     </div>
                 </div>
                 <div className="about__cta">
