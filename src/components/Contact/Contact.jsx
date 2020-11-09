@@ -20,6 +20,7 @@ function Contact({isgrey}) {
         infinite: true,
         slidesToShow: 3,
         speed: 2000,
+        arrows: false,
         autoplaySpeed: 2000,
         pauseOnHover: false,
         responsive: [

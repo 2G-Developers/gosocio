@@ -19,7 +19,7 @@ function Navbar({class1="navbar-list", class2="navbar-list", class3="navbar-list
 
     <div className="nav">
 
-    <div className={navbar ? 'navbar active': 'navbar'}>
+    <div className={navbar ? 'navbar active-nav': 'navbar'}>
         <div className="navbar-hamburg" onClick={()=>setShownav(!showNav)}>
             <div className="navbar-hamburg-bar"></div>
             <div className="navbar-hamburg-bar"></div>

@@ -20,6 +20,7 @@ function About() {
         autoplay: true,
         fade: true,
         infinite: true,
+        arrows: false,
         speed: 1500,
         slidesToShow: 1
     };
