@@ -54,8 +54,8 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <div className="row mt-3">
-                    <div className="col-md-8 p-0">
+                <div className="row mt-3" style={{padding: "0 15px"}}>
+                    <div className="col-md-8">
                         <div  data-aos="zoom-in" className="about__wrapper">
                             <Slider {...singleSettings}>
                                 <div id="test1" className="about__img">
@@ -73,7 +73,7 @@ function About() {
                             </Slider>
                         </div>
                     </div>
-                    <div className="col-md-4 pr-0">
+                    <div className="col-md-4">
                         <div  data-aos="zoom-in" className="about__wrapper" >
                             <div className="about__img">
                                 <img src={hair} className="img-fluid small-margin" alt="The Hair Experts" />
@@ -82,15 +82,15 @@ function About() {
                     </div>
                 </div>
 
-                <div className="row mt-3">
-                    <div className="col-md-4 pl-0">
+                <div className="row mt-3" style={{padding: "0 15px"}}>
+                    <div className="col-md-4">
                         <div  data-aos="zoom-in" className="about__wrapper">
                             <div className="about__img">
                                 <img src={skylon} className="img-fluid small-margin" alt="Skylon" />
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-8 p-0">
+                    <div className="col-md-8">
                         <div  data-aos="zoom-in" className="about__wrapper">
                             <div className="about__img">
                                 <img src={Skylon2} className="img-fluid small-margin" alt="Skylon" />
@@ -99,15 +99,15 @@ function About() {
                     </div>
                 </div>
 
-                <div className="row mt-3">
-                    <div className="col-md-8 p-0">
+                <div className="row mt-3" style={{padding: "0 15px"}}>
+                    <div className="col-md-8">
                         <div  data-aos="zoom-in" className="about__wrapper">
                             <div className="about__img">
                                 <img src={test1} className="img-fluid small-margin" alt="Raziya" />
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-4 pr-0">
+                    <div className="col-md-4">
                         <div  data-aos="zoom-in" className="about__wrapper">
                             <div className="about__img">
                                 <img src={test2} className="img-fluid small-margin" alt="Couchy" />
@@ -116,15 +116,15 @@ function About() {
                     </div>
                 </div>
 
-                <div className="row mt-3">
-                    <div className="col-md-4 pl-0">
+                <div className="row mt-3" style={{padding: "0 15px"}}>
+                    <div className="col-md-4">
                         <div  data-aos="zoom-in" className="about__wrapper">
                             <div className="about__img">
                                 <img src={vr} className="img-fluid small-margin" alt="Skylon VR" />
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-8 p-0">
+                    <div className="col-md-8">
                         <div  data-aos="zoom-in" className="about__wrapper">
                             <Slider {...singleSettings}>
                                 <div className="about__img">
