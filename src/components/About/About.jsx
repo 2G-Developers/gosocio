@@ -18,6 +18,7 @@ import test1 from '../../images/843x528_1.jpg'
 import test2 from '../../images/418x528_1.jpg'
 
 function About() {
+    // const [slideHeight, setSlideHeight] = useState(0)
     const singleSettings = {
         dots: false,
         autoplay: true,
@@ -31,8 +32,13 @@ function About() {
     useEffect(() => {
         Aos.init({
             duration: 1000,
-
         })
+        // setTimeout(function() {
+        //     const hh = document.getElementById('test1').clientHeight
+        //     setSlideHeight(hh)
+        //     console.log(hh)
+
+        // },0)
     }, [])
 
     return (
@@ -48,11 +54,11 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <div className="row mt-3" style={{padding: "0 15px"}}>
+                <div className="row mt-3">
                     <div className="col-md-8 p-0">
                         <div  data-aos="zoom-in" className="about__wrapper">
                             <Slider {...singleSettings}>
-                                <div className="about__img">
+                                <div id="test1" className="about__img">
                                     <img src={raziya} className="img-fluid small-margin" alt="Raziya" />
                                 </div>
                                 <div className="about__img">
@@ -69,18 +75,18 @@ function About() {
                     </div>
                     <div className="col-md-4 pr-0">
                         <div  data-aos="zoom-in" className="about__wrapper" >
-                            <div className="about__img" style={{backgroundImage: `url('${hair}')`}}>
-                                {/* <img src={hair} className="img-fluid small-margin" alt="The Hair Experts" /> */}
+                            <div className="about__img">
+                                <img src={hair} className="img-fluid small-margin" alt="The Hair Experts" />
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="row mt-3" style={{padding: "0 15px"}}>
+                <div className="row mt-3">
                     <div className="col-md-4 pl-0">
                         <div  data-aos="zoom-in" className="about__wrapper">
-                            <div className="about__img" style={{backgroundImage: `url('${skylon}')`}}>
-                                {/* <img src={skylon} className="img-fluid small-margin" alt="Skylon" /> */}
+                            <div className="about__img">
+                                <img src={skylon} className="img-fluid small-margin" alt="Skylon" />
                             </div>
                         </div>
                     </div>
@@ -93,7 +99,7 @@ function About() {
                     </div>
                 </div>
 
-                <div className="row mt-3" style={{padding: "0 15px"}}>
+                <div className="row mt-3">
                     <div className="col-md-8 p-0">
                         <div  data-aos="zoom-in" className="about__wrapper">
                             <div className="about__img">
@@ -103,18 +109,18 @@ function About() {
                     </div>
                     <div className="col-md-4 pr-0">
                         <div  data-aos="zoom-in" className="about__wrapper">
-                            <div className="about__img" style={{backgroundImage: `url('${test2}')`}}>
-                                {/* <img src={test2} className="img-fluid small-margin" alt="Couchy" /> */}
+                            <div className="about__img">
+                                <img src={test2} className="img-fluid small-margin" alt="Couchy" />
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="row mt-3" style={{padding: "0 15px"}}>
+                <div className="row mt-3">
                     <div className="col-md-4 pl-0">
                         <div  data-aos="zoom-in" className="about__wrapper">
-                            <div className="about__img" style={{backgroundImage: `url('${vr}')`}}>
-                                {/* <img src={vr} className="img-fluid small-margin" alt="Skylon VR" /> */}
+                            <div className="about__img">
+                                <img src={vr} className="img-fluid small-margin" alt="Skylon VR" />
                             </div>
                         </div>
                     </div>

@@ -13,11 +13,11 @@
     }
 
     &__wrapper {
-        height: 470px;
+        height: 100%;
 
-        @include respond(tab-port) {
-            height: unset;
-        }
+        // @include respond(tab-port) {
+        //     height: unset;
+        // }
     }
 
     &__grid {
@@ -71,4 +71,12 @@
 
 .slick-list {
     height: 100%;
+}
+
+.slick-slide {
+    display: flex !important;
+}
+
+.slick-track {
+    display: flex !important;
 }
