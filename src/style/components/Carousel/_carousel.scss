@@ -1,20 +1,16 @@
 .hero {
     position: relative;
 
-    &__img {
-        height: 70vh;
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
+    // &__img {
+    //     height: 70vh;
+    //     background-position: center center;
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
 
-        @include respond(tab-port) {
-            height: 50vh;
-        }
-
-        // img {
-        //     object-fit: cover;
-        // }
-    }
+    //     @include respond(tab-port) {
+    //         height: 50vh;
+    //     }
+    // }
 
     &__caption {
         position: absolute;
@@ -56,4 +52,20 @@
     right: 0;
     left: 0;
     background: rgba(235, 77, 55, .5);
+}
+
+.mobile {
+    display: none;
+    width: 100%;
+    @include respond(phone) {
+        display: block;
+    }
+}
+
+.desktop {
+    display: block;
+    width: 100%;
+    @include respond(phone) {
+        display: none;
+    }
 }

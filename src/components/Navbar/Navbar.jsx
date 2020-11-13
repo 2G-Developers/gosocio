@@ -1,7 +1,9 @@
 import React , { useState } from 'react'
 import { Link } from "react-router-dom";
+import logo from '../../images/logo.svg'
+import logo2 from '../../images/logo-2.svg'
 
-function Navbar({class1="navbar-list", class2="navbar-list", class3="navbar-list"}){
+function Navbar({isSecondary,class1="navbar-list", class2="navbar-list", class3="navbar-list"}){
     const [showNav,setShownav ] = useState(false);
     const [navbar, setNavbar] = useState(false);
 
@@ -20,6 +22,8 @@ function Navbar({class1="navbar-list", class2="navbar-list", class3="navbar-list
     <div className="nav">
 
     <div className={navbar ? 'navbar active-nav': 'navbar'}>
+        {isSecondary ? null : <img className="logo" src={logo} alt="logo"/> }
+        {isSecondary ? <img className="logo" src={logo2} alt="logo"/> : null }
         <div className="navbar-hamburg" onClick={()=>setShownav(!showNav)}>
             <div className="navbar-hamburg-bar"></div>
             <div className="navbar-hamburg-bar"></div>
@@ -33,7 +37,6 @@ function Navbar({class1="navbar-list", class2="navbar-list", class3="navbar-list
              </div>
         </div>
         <div className="navbar-content">
-
             <Link to="/" className={class1}>Home</Link>
             <Link to="/about" className={class2}>About</Link>
             <Link to="/contact" className={class3}>Contact</Link>
