@@ -1,6 +1,5 @@
 import React from 'react'
 import Central from '../../images/Central.png'
-import Button from '../Button/Button'
 import {ReactComponent as Call} from '../../images/CallIcon.svg'
 import {ReactComponent as LocationIcon} from '../../images/LocationIcon.svg'
 
@@ -25,9 +24,6 @@ function Location() {
                                     <LocationIcon width="16px" height="16px" fill="#EB4D37" /> The Executive Zone, Shakti Towers-1, <br />
                                     766, Anna Salai, Chennai - 600002.
                                 </p>
-                                <div className="location__cta">
-                                    <Button />
-                                </div>
                             </div>
                         </div>
                     </div>

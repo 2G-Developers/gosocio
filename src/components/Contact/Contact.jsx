@@ -16,9 +16,10 @@ function Contact({isgrey}) {
 
     const settings = {
         dots: false,
-        autoplay: true,
+        autoplay: false,
         infinite: true,
         slidesToShow: 3,
+        centerMode: true,
         speed: 2000,
         arrows: false,
         autoplaySpeed: 2000,
@@ -43,6 +44,7 @@ function Contact({isgrey}) {
             breakpoint: 480,
             settings: {
                     slidesToShow: 1,
+                    centerMode: true,
                     infinite: true
                 }
             }

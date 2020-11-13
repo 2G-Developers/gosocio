@@ -4,7 +4,7 @@ function Service() {
     return (
         <section id="service" className="service">
             <div className="container">
-                <div className="row">
+                <div className="row" style={{marginBottom: "3rem"}}>
                     <div className="col-md-12 service__header">
                         <p className="service__text">
                             We believe that great digital design and storytelling happens with pure passion, impeccable knowledge and above all personal connection with our clients' brand. Our working style is unique. Be it a multinational corporation or a startup, our ideology is one and the same for both—keep it simple and to the point and let creativity take over. Our work is interesting because it is efficient, aesthetically pleasing, gritty and emotionally strong.

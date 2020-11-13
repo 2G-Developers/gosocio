@@ -31,7 +31,7 @@ function Enquiry() {
                             <input type="text" className="enquiry__input" placeholder="Last Name" />
                             <Dropdown />
                         </div>
-                        <div className="enquiry__form mt-5">
+                        <div className="enquiry__form">
                             <input type="text" className="enquiry__input" placeholder="Email address" />
                             <input type="text" className="enquiry__input" placeholder="Phone" />
                         </div>

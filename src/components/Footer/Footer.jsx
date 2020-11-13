@@ -24,6 +24,8 @@ function Footer() {
                             </li>
                         </ul>
 
+                        <span className="footer__text">© 2020 Go Sociobutterfly. All rights reserved.</span>
+
                         <ul className="footer__nav">
                             <li className="footer__item footer__item--icon">
                                 <a href="/" className="footer__link">

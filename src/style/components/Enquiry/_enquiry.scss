@@ -4,7 +4,11 @@
     &__form {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        grid-gap: 2rem;    
+        grid-gap: 2rem;
+        
+        &:last-child {
+            margin-top: 5rem;
+        }
     }
 
     &__input {
