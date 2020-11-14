@@ -8,7 +8,7 @@ function Navbar({isSecondary,class1="navbar-list", class2="navbar-list", class3=
     const [navbar, setNavbar] = useState(false);
 
     const changeBackground = () => {
-        if(window.scrollY >= 300) {
+        if(window.scrollY >= 100) {
             setNavbar(true)
         } else {
             setNavbar(false)
