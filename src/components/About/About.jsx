@@ -171,6 +171,9 @@ think, envision and create with you to build a strong digital future.</p>
                                     <img src={amaas} className="img-fluid small-margin" alt="Amaas" />
                                 </div>
                                 <div className="about__img">
+                                    <img src={untold} className="img-fluid small-margin" alt="Skylon" />
+                                </div>
+                                <div className="about__img">
                                     <img src={Skylon2} className="img-fluid small-margin" alt="Skylon" />
                                 </div>
                                 <div className="about__img">
@@ -187,9 +190,6 @@ think, envision and create with you to build a strong digital future.</p>
                                 </div>
                                 <div className="about__img">
                                     <img src={vr} className="img-fluid small-margin" alt="Amaas" />
-                                </div>
-                                <div className="about__img">
-                                    <img src={untold} className="img-fluid small-margin" alt="Skylon" />
                                 </div>
                                 <div className="about__img">
                                     <img src={couchyWebsite} className="img-fluid small-margin" alt="Sooja" />

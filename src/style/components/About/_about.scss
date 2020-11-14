@@ -12,6 +12,7 @@
         }
 
         p {
+            font-size: .9375rem;
             @include respond(tab-port) { // width < 900?
                 font-size: 1rem;
             }

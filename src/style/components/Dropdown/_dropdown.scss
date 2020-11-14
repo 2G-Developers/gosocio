@@ -2,6 +2,7 @@
 
     &__form-group {
         position: relative;
+        display: flex;
     }
 
     &__select {
@@ -45,7 +46,7 @@
         padding: .4rem 0;
         font-size: .875rem;
         color: #cbcbcb;
-        border-bottom: 1px solid #cbcbcb;
+        // border-bottom: 1px solid #cbcbcb;
 
         &:disabled {
             background: transparent;
