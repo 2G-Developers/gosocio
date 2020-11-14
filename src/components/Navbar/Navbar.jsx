@@ -21,13 +21,13 @@ function Navbar({isSecondary,class1="navbar-list", class2="navbar-list", class3=
 
     <div className="nav">
 
-    <div className={navbar ? 'navbar active-nav': 'navbar'}>
-        {isSecondary ? null : <img className="logo" src={logo} alt="logo"/> }
-        {isSecondary ? <img className="logo" src={logo2} alt="logo"/> : null }
+    <div className={navbar ? 'navbar active-nav': 'navbar'} style={{background: `${isSecondary && navbar ? '#000' : 'transparent'}`}}>
+        {isSecondary ? null : <Link to="/"><img className="logo" src={logo} alt="logo"/></Link> }
+        {isSecondary ? <Link to="/"><img className="logo" src={logo2} alt="logo"/></Link> : null }
         <div className="navbar-hamburg" onClick={()=>setShownav(!showNav)}>
-            <div className="navbar-hamburg-bar"></div>
-            <div className="navbar-hamburg-bar"></div>
-            <div className="navbar-hamburg-bar"></div>
+            <div className="navbar-hamburg-bar" style={{background: `${isSecondary ? '#fff': '#000'}`}}></div>
+            <div className="navbar-hamburg-bar" style={{background: `${isSecondary ? '#fff': '#000'}`}}></div>
+            <div className="navbar-hamburg-bar" style={{background: `${isSecondary ? '#fff': '#000'}`}}></div>
         </div>
     </div>  
     <div className="navbar-page" style={{display: showNav ? 'block' : 'none' }}>

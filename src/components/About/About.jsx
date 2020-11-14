@@ -31,6 +31,9 @@ import hair from '../../images/hair.jpg'
 import hair1 from '../../images/intro_the.jpg'
 import hair2 from '../../images/sam.jpg'
 import hair3 from '../../images/hair3.jpg'
+import hairDiwaliA from '../../images/thediwalia.jpg'
+import hairDiwaliB from '../../images/thediwalib.jpg'
+import hairDiwaliC from '../../images/thediwalic.jpg'
 
 // Couchy
 import couchy from '../../images/couchy.png'
@@ -73,7 +76,10 @@ function About() {
                     <div className="col-md-12">
                         <div className="about__heading">
                             <h3>
-                            We are a multi-disciplinary digital marketing agency based in Chennai
+                                We are a multi-disciplinary  
+                            </h3>
+                            <h3>
+                                digital marketing agency
                             </h3>
                             <p>Go Socio Butterfly is a fully integrated digital marketing and branding agency that
 utilises our strategic, creative and innovative digital ideas to transform your business.
@@ -115,6 +121,15 @@ think, envision and create with you to build a strong digital future.</p>
                                 </div>
                                 <div className="about__img">
                                     <img src={hair3} className="img-fluid small-margin" alt="Sooja" />
+                                </div>
+                                <div className="about__img">
+                                    <img src={hairDiwaliA} className="img-fluid small-margin" alt="Sooja" />
+                                </div>
+                                <div className="about__img">
+                                    <img src={hairDiwaliB} className="img-fluid small-margin" alt="Sooja" />
+                                </div>
+                                <div className="about__img">
+                                    <img src={hairDiwaliC} className="img-fluid small-margin" alt="Sooja" />
                                 </div>
                             </Slider>
                         </div>
