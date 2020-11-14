@@ -1,5 +1,6 @@
 import React from 'react'
-import arjee from '../../images/arjee-client.png'
+
+import arjeeSvg from '../../images/arjeeSvg.svg'
 import hair from '../../images/hair-client.png'
 import raziya from '../../images/raziya-client.png'
 import sangeetha from '../../images/sangeetha-client.png'
@@ -60,7 +61,7 @@ function Contact({isgrey}) {
                         <div className="contact__carousel">
                             <Slider {...settings}>
                                 <div className="contact__image">
-                                    <img src={arjee} alt="Arjee" className="img-fluid"/>
+                                    <img src={arjeeSvg} alt="Arjee" className="img-fluid"/>
                                 </div>
                                 <div className="contact__image">
                                     <img src={hair} alt="The Hair Experts" className="img-fluid"/>
