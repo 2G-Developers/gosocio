@@ -32,6 +32,7 @@
 
     &__text {
         color: #fff;
+        font-size: .75rem;
 
         @include respond(tab-port) { // width < 900?
             order: 2;

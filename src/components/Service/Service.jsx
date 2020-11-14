@@ -7,7 +7,11 @@ function Service() {
                 <div className="row" style={{marginBottom: "3rem"}}>
                     <div className="col-md-12 service__header">
                         <p className="service__text">
-                            We believe that great digital design and storytelling happens with pure passion, impeccable knowledge and above all personal connection with our clients' brand. Our working style is unique. Be it a multinational corporation or a startup, our ideology is one and the same for both—keep it simple and to the point and let creativity take over. Our work is interesting because it is efficient, aesthetically pleasing, gritty and emotionally strong.
+                        We believe that great digital design and storytelling happens with pure passion,
+impeccable knowledge and above all personal connection with our clients&#39; brand. Our
+working style is unique. Be it a multinational corporation or a startup, our ideology is
+one and the same for both—keep it simple and to the point and let creativity take over.
+Our work is efficient, aesthetically pleasing, gritty and emotionally strong.
                         </p>
                         
                     </div>
@@ -29,7 +33,10 @@ function Service() {
                                 </div>
                                 <div className="service__card-body">
                                     <p>
-                                        We are a full-service digital marketing agency that strategically builds digital experiences by leveraging the newest tools and techniques that digital platforms have to offer. We first study your business, identify what your audience is interested in and build campaigns that are supported by market trends. Simply stated, your digital marketing goals will be achieved.
+                                    We strategically build digital experiences by leveraging the newest tools and techniques
+that digital platforms have to offer. We first study your business, identify what your
+audience is interested in and build campaigns that are supported by market trends.
+Simply stated, your digital marketing goals will be achieved.
                                     </p>
                                 </div>
                             </div>
@@ -45,7 +52,11 @@ function Service() {
                                 </div>
                                 <div className="service__card-body">
                                     <p>
-                                        Branding today is all about how you make your audience feel. It's not just about the visual elements and the design of digital products. But it's rather about developing a unified system that extends across several mediums and interaction points. Our branding offers a holistic solution that gives you a competitive edge. We do both brand makeover and the building of your brand from the sketch.
+                                    Branding today is all about how you make your audience feel. It&#39;s not only about the
+visual elements and the design of digital products. But it&#39;s also about developing a
+unified system that extends across several mediums and interaction points. Our
+branding offers a holistic solution that gives you a competitive edge. We do both brand
+makeover and the building of your brand from the sketch.
                                     </p>
                                 </div>
                             </div>
@@ -67,7 +78,10 @@ function Service() {
                                 </div>
                                 <div className="service__card-body">
                                     <p>
-                                        Content plays a key role in enhancing the performance of digital products. We derive content from asking the right business questions and finding the right answers. Our content creation spans from conceptualization to crafting powerful messages that resonate the brand's objectives.
+                                    Content plays a key role in enhancing the performance of digital products. We derive
+content from asking the right business questions and finding the right answers. Our
+content creation spans from conceptualization to crafting powerful messages that
+resonate the brand&#39;s objectives.
                                     </p>
                                 </div>
                             </div>
@@ -86,7 +100,11 @@ function Service() {
                                 </div>
                                 <div className="service__card-body">
                                     <p>
-                                        There is no secret recipe for bringing your website on top of the Search Engine Result Pages. Our SEO strategies are built with pure knowledge of what works and what doesn't. From technical SEO to link building to content writing our SEO aficionados tackle it all to bring you on top of the Search Engine Result Pages. Driven by data our strategies are designed to drive results.
+                                    There is no secret recipe for bringing your website on top of the Search Engine Result
+Pages. Our SEO strategies are built with pure knowledge of what works and what
+doesn&#39;t. From technical SEO to link building to content writing our SEO experts tackle it
+all to bring you on top of the Search Engine Result Pages. Driven by data our strategies
+are designed to drive results.
                                     </p>
                                 </div>
                             </div>
@@ -122,7 +140,9 @@ function Service() {
                                 </div>
                                 <div className="service__card-body">
                                     <p>
-                                        Designs that provoke emotions, tells stories and makes people tick are what we strive for. We design interactive xxxxx that strikes an emotional connection with your audience and take them on a journey towards buying.
+                                    Designs that provoke emotions, tells stories and makes people tick are what we strive
+for. Our interactive designs strike an emotional connection with your audience and take
+them on a journey towards buying.
                                     </p>
                                 </div>
                             </div>
@@ -142,7 +162,9 @@ function Service() {
                                 </div>
                                 <div className="service__card-body">
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloremque nulla odio iusto eveniet, velit dicta est, ullam dolore quia error in modi non ex rerum ipsa nam placeat omnis.
+                                    We do not restrict our creativity to flyers, brochures, social media and search engines.
+Our imagination also extends to building office branding by strategically placing
+marketing materials that resonate with your brand ethos.
                                     </p>
                                 </div>
                             </div>

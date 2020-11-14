@@ -56,7 +56,7 @@ function Contact({isgrey}) {
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <h2 className="heading">Some of our awesome clients</h2>
+                        <h2 className="heading">Our Awesome Clients</h2>
                         <div className="contact__carousel">
                             <Slider {...settings}>
                                 <div className="contact__image">

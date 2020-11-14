@@ -73,9 +73,12 @@ function About() {
                     <div className="col-md-12">
                         <div className="about__heading">
                             <h3>
-                                We're a digital marketing agency based in  Chennai
+                            We are a multi-disciplinary digital marketing agency based in Chennai
                             </h3>
-                            <p>Social Butterfly is a fully integrated digital marketing and branding agency that believes that our strategic, creative and innovative digital ideas can transform your business. We create leading ideas that are unique and help your brand progress digitally. We think, envision and create with you to build a strong digital future.</p>
+                            <p>Go Socio Butterfly is a fully integrated digital marketing and branding agency that
+utilises our strategic, creative and innovative digital ideas to transform your business.
+We create leading ideas that are unique and help your brand progress digitally. We
+think, envision and create with you to build a strong digital future.</p>
                         </div>
                     </div>
                 </div>
