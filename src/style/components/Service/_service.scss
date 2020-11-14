@@ -22,7 +22,7 @@
             font-size: .9375rem;
 
             @include respond(tab-port) { // width < 900?
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
         }
     }
@@ -45,7 +45,7 @@
         font-size: .9375rem;
 
         @include respond(tab-port) { // width < 900?
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
     }
 
