@@ -76,11 +76,11 @@ function About() {
                     <div className="col-md-12">
                         <div className="about__heading">
                             <h3>
-                                We are a multi-disciplinary  
+                                We are a multi-disciplinary digital marketing agency
                             </h3>
-                            <h3>
-                                digital marketing agency
-                            </h3>
+                            {/* <h3>
+                                
+                            </h3> */}
                             <p>Go Socio Butterfly is a fully integrated digital marketing and branding agency that
 utilises our strategic, creative and innovative digital ideas to transform your business.
 We create leading ideas that are unique and help your brand progress digitally. We
