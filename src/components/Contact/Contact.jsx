@@ -17,7 +17,7 @@ function Contact({isgrey}) {
 
     const settings = {
         dots: false,
-        autoplay: true,
+        autoplay: false,
         infinite: true,
         slidesToShow: 3,
         centerMode: true,
