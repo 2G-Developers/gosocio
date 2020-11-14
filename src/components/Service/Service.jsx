@@ -103,7 +103,7 @@ resonate the brand&#39;s objectives.
                                     There is no secret recipe for bringing your website on top of the Search Engine Result
 Pages. Our SEO strategies are built with pure knowledge of what works and what
 doesn&#39;t. From technical SEO to link building to content writing our SEO experts tackle it
-all to bring you on top of the Search Engine Result Pages.
+all to bring you on top of the Search Engine Results.
                                     </p>
                                 </div>
                             </div>
