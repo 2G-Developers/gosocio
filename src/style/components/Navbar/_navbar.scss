@@ -83,6 +83,10 @@
     padding: .3rem;
     width: 100%;
     cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    padding-top: 1rem;
   }
   
   .mdiv {

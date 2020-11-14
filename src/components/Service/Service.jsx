@@ -54,7 +54,7 @@ Simply stated, your digital marketing goals will be achieved.
                                     <p>
                                     Branding today is all about how you make your audience feel. It&#39;s not only about the
 visual elements and the design of digital products. But it&#39;s also about developing a
-unified system that extends across several mediums and interaction points. Our
+unified system that extends across several mediums. Our
 branding offers a holistic solution that gives you a competitive edge. We do both brand
 makeover and the building of your brand from the sketch.
                                     </p>
