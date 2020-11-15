@@ -6,10 +6,18 @@ import { useForm } from "react-hook-form";
 function Enquiry() {
     const [enquiriesChecked, setEnquiriesChecked] = useState(true);
     const [dropdownValue, setdropdownValue] = useState('')
+    const [isMailSent, setMailSent] = useState(false);
+
+    const toastStyle = {
+        "position": "fixed",
+        "zIndex": "1000",
+        "bottom": "0",
+        "right": "0"
+    }
 
     const { register, handleSubmit, errors } = useForm();
 
-    const onSubmit = data => {
+    const onSubmit = (data, e) => {
         enquiriesChecked ? data.type = "Enquiry": data.type = "J";
         enquiriesChecked ? delete data.job: data.job = dropdownValue;
 
@@ -18,24 +26,29 @@ function Enquiry() {
         for ( var key in data ) {
             form_data.append(key, data[key]);
         }
-var requestOptions = {
-  method: 'POST',
-  body: form_data,
-  redirect: 'follow'
-};
+        var requestOptions = {
+            method: 'POST',
+            body: form_data,
+            redirect: 'follow'
+        };
+        
+        fetch("/registerSocio.php", requestOptions)
+        .then(response => response.text())
+        .then(result => {
+            
+            setMailSent(prevState => !prevState)
 
-fetch("/registerSocio.php", requestOptions)
-  .then(response => response.text())
-  .then(result => {
-    fetch("/register.php", requestOptions)
-    .then(response => response.text())
-    .then(result => {})
-    .catch(error => console.log('error', error)); 
-    })
-  .catch(error => console.log('error', error));
+            setTimeout(function() {
+                setMailSent(prevState => !prevState)
+            }, 2000)
+
+            fetch("/register.php", requestOptions)
+            .then(response => response.text())
+            .then(result => e.target.reset())
+            .catch(error => console.log('error', error)); 
+        })
+        .catch(error => console.log('error', error));
     
-
-
         
     };
     
@@ -103,6 +116,11 @@ fetch("/registerSocio.php", requestOptions)
                     </div>
                 </div>
             </div>
+            {isMailSent ? (
+                <div class="alert alert-success" style={toastStyle} role="alert">
+                    We will get in touch with you shortly.
+                </div>
+            ) : null}
         </section>
     )
 }
