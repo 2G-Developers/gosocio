@@ -28,17 +28,17 @@ function Footer() {
 
                         <ul className="footer__nav">
                             <li className="footer__item footer__item--icon">
-                                <a href="https://instagram.com/gosociobutterfly?igshid=1x6vyl7dz6e6h" className="footer__link">
+                                <a href="https://instagram.com/gosociobutterfly?igshid=1x6vyl7dz6e6h" target="_blank" rel="noreferrer" className="footer__link">
                                     <Instagram width="1rem" height="1rem" fill="#fff" />
                                 </a>
                             </li>
                             <li className="footer__item footer__item--icon">
-                                <a href="https://www.facebook.com/gosociobutterfly" className="footer__link">
+                                <a href="https://www.facebook.com/gosociobutterfly" target="_blank" rel="noreferrer" className="footer__link">
                                     <Facebook width="1rem" height="1rem" fill="#fff" />
                                 </a>
                             </li>
                             <li className="footer__item footer__item--icon">
-                                <a href="https://www.linkedin.com/company/go-socialbutterfly" className="footer__link">
+                                <a href="https://www.linkedin.com/company/go-socialbutterfly" target="_blank" rel="noreferrer" className="footer__link">
                                     <Linkedin width="1rem" height="1rem" fill="#fff" />
                                 </a>
                             </li>
