@@ -93,16 +93,16 @@ think, envision and create with you to build a strong digital future.</p>
                         <div  data-aos="zoom-in" className="about__wrapper">
                             <Slider {...singleSettings}>
                                 <div id="test1" className="about__img">
-                                    <img src={ammus} className="img-fluid small-margin" alt="Raziya" />
+                                    <img src={ammus} className="img-fluid small-margin" alt="ammus" />
                                 </div>
                                 <div className="about__img">
                                     <img src={amaas} className="img-fluid small-margin" alt="Amaas" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={arjee} className="img-fluid small-margin" alt="Skylon" />
+                                    <img src={arjee} className="img-fluid small-margin" alt="arjee" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={sooja} className="img-fluid small-margin" alt="Sooja" />
+                                    <img src={sooja} className="img-fluid small-margin" alt="Pooja" />
                                 </div>
                             </Slider>
                         </div>
@@ -118,12 +118,6 @@ think, envision and create with you to build a strong digital future.</p>
                                 </div>
                                 <div className="about__img">
                                     <img src={hair2} className="img-fluid small-margin" alt="Skylon" />
-                                </div>
-                                <div className="about__img">
-                                    <img src={hair3} className="img-fluid small-margin" alt="Sooja" />
-                                </div>
-                                <div className="about__img">
-                                    <img src={hairDiwaliA} className="img-fluid small-margin" alt="Sooja" />
                                 </div>
                                 <div className="about__img">
                                     <img src={hairDiwaliB} className="img-fluid small-margin" alt="Sooja" />
@@ -162,13 +156,13 @@ think, envision and create with you to build a strong digital future.</p>
                                     <img src={raziya} className="img-fluid small-margin" alt="Raziya" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={amaas} className="img-fluid small-margin" alt="Amaas" />
+                                    <img src={Skylon2} className="img-fluid small-margin" alt="skylon" />
                                 </div>
                                 <div className="about__img">
                                     <img src={eclectic} className="img-fluid small-margin" alt="Skylon" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={sooja} className="img-fluid small-margin" alt="Sooja" />
+                                    <img src={untold} className="img-fluid small-margin" alt="Sooja" />
                                 </div>
                             </Slider>
                         </div>
@@ -179,20 +173,17 @@ think, envision and create with you to build a strong digital future.</p>
                     <div className="col-md-8" style={{padding: 0}}>
                         <div  data-aos="zoom-in" className="about__wrapper">
                             <Slider {...singleSettings}>
-                                <div id="test1" className="about__img">
-                                    <img src={raziya} className="img-fluid small-margin" alt="Raziya" />
+                                <div className="about__img">
+                                    <img src={arjee} className="img-fluid small-margin" alt="arjee" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={amaas} className="img-fluid small-margin" alt="Amaas" />
+                                    <img src={sooja} className="img-fluid small-margin" alt="pooja" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={untold} className="img-fluid small-margin" alt="Skylon" />
+                                    <img src={amaas} className="img-fluid small-margin" alt="amaas" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={Skylon2} className="img-fluid small-margin" alt="Skylon" />
-                                </div>
-                                <div className="about__img">
-                                    <img src={sooja} className="img-fluid small-margin" alt="Sooja" />
+                                    <img src={ammus} className="img-fluid small-margin" alt="ammus" />
                                 </div>
                             </Slider>
                         </div>
@@ -207,7 +198,10 @@ think, envision and create with you to build a strong digital future.</p>
                                     <img src={vr} className="img-fluid small-margin" alt="Amaas" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={couchyWebsite} className="img-fluid small-margin" alt="Sooja" />
+                                    <img src={hair3} className="img-fluid small-margin" alt="Sooja" />
+                                </div>
+                                <div className="about__img">
+                                    <img src={hairDiwaliA} className="img-fluid small-margin" alt="Sooja" />
                                 </div>
                             </Slider>
                         </div>
@@ -225,10 +219,10 @@ think, envision and create with you to build a strong digital future.</p>
                                     <img src={couchyComfy} className="img-fluid small-margin" alt="Amaas" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={couchyIndependence} className="img-fluid small-margin" alt="Skylon" />
+                                    <img src={hair3} className="img-fluid small-margin" alt="Sooja" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={couchyWebsite} className="img-fluid small-margin" alt="Sooja" />
+                                    <img src={hairDiwaliA} className="img-fluid small-margin" alt="Sooja" />
                                 </div>
                             </Slider>
                         </div>
@@ -237,13 +231,13 @@ think, envision and create with you to build a strong digital future.</p>
                         <div  data-aos="zoom-in" className="about__wrapper">
                             <Slider {...singleSettings}>
                                 <div className="about__img">
-                                    <img src={amaas} className="img-fluid small-margin" alt="Amaas" />
+                                    <img src={eclectic} className="img-fluid small-margin" alt="Amaas" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={raziya} className="img-fluid small-margin" alt="Raziya" />
+                                    <img src={untold} className="img-fluid small-margin" alt="Raziya" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={sooja} className="img-fluid small-margin" alt="Sooja" />
+                                    <img src={raziya} className="img-fluid small-margin" alt="Sooja" />
                                 </div>
                                 <div className="about__img">
                                     <img src={Skylon2} className="img-fluid small-margin" alt="Skylon" />
