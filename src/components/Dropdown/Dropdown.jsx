@@ -22,12 +22,11 @@ function Dropdown({setdropdownValue,dropdownValue}) {
                 </div>
             </div>
             <div className={`dropdown__options ${dropdownToggle ? 'dropdown__options--show':''}`} onClick={onDropdownData}>
-                <div className="dropdown__option" data-value="Social Media">Social Media</div>
                 <div className="dropdown__option" data-value="Content">Content</div>
                 <div className="dropdown__option" data-value="Creative">Creative</div>
-                <div className="dropdown__option" data-value="Development">Development</div>
                 <div className="dropdown__option" data-value="SEO">SEO</div>
-                <div className="dropdown__option" data-value="Project Management">Project Management</div>
+                <div className="dropdown__option" data-value="Social Media">Social Media</div>
+                <div className="dropdown__option" data-value="Development">Developer</div>
                 <div className="dropdown__option" data-value="Other">Other</div>
             </div>
         </div>

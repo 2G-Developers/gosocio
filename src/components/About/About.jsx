@@ -212,17 +212,17 @@ think, envision and create with you to build a strong digital future.</p>
                     <div className="col-md-4" style={{padding: 0}}>
                         <div  data-aos="zoom-in" className="about__wrapper">
                             <Slider {...singleSettings}>
-                                <div id="test1" className="about__img">
-                                    <img src={couchy} className="img-fluid small-margin" alt="Raziya" />
+                                <div className="about__img">
+                                    <img src={hair1} className="img-fluid small-margin" alt="Sooja" />
                                 </div>
                                 <div className="about__img">
                                     <img src={couchyComfy} className="img-fluid small-margin" alt="Amaas" />
                                 </div>
-                                <div className="about__img">
-                                    <img src={hair3} className="img-fluid small-margin" alt="Sooja" />
+                                <div id="test1" className="about__img">
+                                    <img src={couchy} className="img-fluid small-margin" alt="Raziya" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={hairDiwaliA} className="img-fluid small-margin" alt="Sooja" />
+                                    <img src={hairDiwaliB} className="img-fluid small-margin" alt="Sooja" />
                                 </div>
                             </Slider>
                         </div>

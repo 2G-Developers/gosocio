@@ -3,6 +3,7 @@ import React from 'react'
 import arjeeSvg from '../../images/arjeeSvg.svg'
 import hair from '../../images/hair-client.png'
 import raziya from '../../images/raziya-client.svg'
+import Untold from '../../images/untolod-client.png'
 import sangeetha from '../../images/sangeetha-client.png'
 import skylon from '../../images/skylon-client.png'
 import Ammus from '../../images/ammus-client.png'
@@ -17,7 +18,7 @@ function Contact({isgrey}) {
 
     const settings = {
         dots: false,
-        autoplay: true,
+        autoplay: false,
         infinite: true,
         slidesToShow: 3,
         centerMode: true,
@@ -60,6 +61,10 @@ function Contact({isgrey}) {
                         <h2 className="heading">Our Awesome Clients</h2>
                         <div className="contact__carousel">
                             <Slider {...settings}>
+
+                                <div className="contact__image">
+                                    <img src={Untold} alt="Untold" className="img-fluid"/>
+                                </div>
                                 <div className="contact__image">
                                     <img src={arjeeSvg} alt="Arjee" className="img-fluid"/>
                                 </div>
