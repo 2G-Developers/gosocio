@@ -13,13 +13,24 @@ function Enquiry() {
         enquiriesChecked ? data.type = "Enquiry": data.type = "J";
         enquiriesChecked ? delete data.job: data.job = dropdownValue;
 
-        fetch('https://www.gosociobutterfly.com/registerSocio.php', {
-            method: 'POST',
-            body: JSON.stringify(data)
-        })
-        .then(function(res) {
-            console.log( res)
-        })
+        // fetch('https://www.gosociobutterfly.com/registerSocio.php', {
+        //     method: 'POST',
+        //     body: JSON.stringify(data)
+        // })
+        // .then(function(res) {
+        //     console.log( res)
+        // })
+
+var requestOptions = {
+  method: 'POST',
+  body: data,
+  redirect: 'follow'
+};
+
+fetch("https://www.gosociobutterfly.com/register.php", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
         
     };
     
