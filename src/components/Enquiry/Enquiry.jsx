@@ -23,7 +23,7 @@ function Enquiry() {
 
 var requestOptions = {
   method: 'POST',
-  body: data,
+  body: JSON.stringify(data),
   redirect: 'follow'
 };
 
