@@ -33,14 +33,16 @@ var requestOptions = {
 
 fetch("https://www.gosociobutterfly.com/registerSocio.php", requestOptions)
   .then(response => response.text())
-  .then(result => console.log(result))
+  .then(result => {console.log(result);
+    fetch("https://www.gosociobutterfly.com/register.php", requestOptions)
+    .then(response => response.text())
+    .then(result => {console.log(result)})
+    .catch(error => console.log('error', error)); 
+    })
   .catch(error => console.log('error', error));
     
 
-fetch("https://www.gosociobutterfly.com/register.php", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
+
         
     };
     
