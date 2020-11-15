@@ -2,7 +2,7 @@ import React from 'react'
 
 import arjeeSvg from '../../images/arjeeSvg.svg'
 import hair from '../../images/hair-client.png'
-import raziya from '../../images/raziya-client.png'
+import raziya from '../../images/raziya-client.svg'
 import sangeetha from '../../images/sangeetha-client.png'
 import skylon from '../../images/skylon-client.png'
 import Ammus from '../../images/ammus-client.png'
