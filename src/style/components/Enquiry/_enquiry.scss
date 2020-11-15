@@ -57,10 +57,14 @@
     &__button {
         text-align: left;
         margin-top: 3rem;
-        cursor: pointer;
+        
 
         &--text {
-            margin-right: 0.5rem;
+            padding-right: 0.5rem;
+            cursor: pointer;
+        }
+        &--img {
+            cursor: pointer;
         }
     }
 

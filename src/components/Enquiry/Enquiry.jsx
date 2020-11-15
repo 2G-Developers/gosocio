@@ -62,7 +62,7 @@ function Enquiry() {
                             </div>
                             <div className="enquiry__button">
                                 <span className="enquiry__button--text">Send</span>
-                                <img src={ArrowRightCircle} alt="Arrow right circle"/>
+                                <img  className="enquiry__button--img" src={ArrowRightCircle} alt="Arrow right circle"/>
                             </div>
                         </div>
                     </div>

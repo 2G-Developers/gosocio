@@ -141,7 +141,7 @@ all to bring you on top of the Search Engine Results.
                                     <p>
                                     Designs that provoke emotions, tells stories and makes people tick are what we strive
 for. Our interactive designs strike an emotional connection with your audience and take
-them on a journey towards buying.Our designs & creativity are just what you need to gain the upper hand and grow digitally.
+them on a journey towards buying. Our designs & creativity are just what you need to gain the upper hand and grow digitally.
                                     </p>
                                 </div>
                             </div>
