@@ -24,10 +24,10 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://www.gosociobutterfly.com/registerSocio.php", requestOptions)
+fetch("/registerSocio.php", requestOptions)
   .then(response => response.text())
   .then(result => {
-    fetch("https://www.gosociobutterfly.com/register.php", requestOptions)
+    fetch("/register.php", requestOptions)
     .then(response => response.text())
     .then(result => {})
     .catch(error => console.log('error', error)); 
