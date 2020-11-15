@@ -99,7 +99,7 @@ think, envision and create with you to build a strong digital future.</p>
                                     <img src={Skylon2} className="img-fluid small-margin" alt="Amaas" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={arjee} className="img-fluid small-margin" alt="arjee" />
+                                    <img src={untold} className="img-fluid small-margin" alt="arjee" />
                                 </div>
                                 <div className="about__img">
                                     <img src={sooja} className="img-fluid small-margin" alt="Pooja" />
@@ -162,7 +162,7 @@ think, envision and create with you to build a strong digital future.</p>
                                     <img src={eclectic} className="img-fluid small-margin" alt="Skylon" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={untold} className="img-fluid small-margin" alt="Sooja" />
+                                    <img src={arjee} className="img-fluid small-margin" alt="Sooja" />
                                 </div>
                             </Slider>
                         </div>
@@ -174,7 +174,7 @@ think, envision and create with you to build a strong digital future.</p>
                         <div  data-aos="zoom-in" className="about__wrapper">
                             <Slider {...singleSettings}>
                                 <div className="about__img">
-                                    <img src={arjee} className="img-fluid small-margin" alt="arjee" />
+                                    <img src={untold} className="img-fluid small-margin" alt="arjee" />
                                 </div>
                                 <div className="about__img">
                                     <img src={sooja} className="img-fluid small-margin" alt="pooja" />
@@ -234,7 +234,7 @@ think, envision and create with you to build a strong digital future.</p>
                                     <img src={eclectic} className="img-fluid small-margin" alt="Amaas" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={untold} className="img-fluid small-margin" alt="Raziya" />
+                                    <img src={arjee} className="img-fluid small-margin" alt="Raziya" />
                                 </div>
                                 <div className="about__img">
                                     <img src={raziya} className="img-fluid small-margin" alt="Sooja" />
