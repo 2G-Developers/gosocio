@@ -13,13 +13,6 @@ function Enquiry() {
         enquiriesChecked ? data.type = "Enquiry": data.type = "J";
         enquiriesChecked ? delete data.job: data.job = dropdownValue;
 
-        // fetch('https://www.gosociobutterfly.com/registerSocio.php', {
-        //     method: 'POST',
-        //     body: JSON.stringify(data)
-        // })
-        // .then(function(res) {
-        //     console.log( res)
-        // })
         var form_data = new FormData();
 
         for ( var key in data ) {
@@ -33,10 +26,10 @@ var requestOptions = {
 
 fetch("https://www.gosociobutterfly.com/registerSocio.php", requestOptions)
   .then(response => response.text())
-  .then(result => {console.log(result);
+  .then(result => {
     fetch("https://www.gosociobutterfly.com/register.php", requestOptions)
     .then(response => response.text())
-    .then(result => {console.log(result)})
+    .then(result => {})
     .catch(error => console.log('error', error)); 
     })
   .catch(error => console.log('error', error));
