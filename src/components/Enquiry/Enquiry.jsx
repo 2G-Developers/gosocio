@@ -18,10 +18,7 @@ function Enquiry() {
             body: JSON.stringify(data)
         })
         .then(function(res) {
-            return res.json()
-        })
-        .then(function(data) {
-            console.log("sent", data)
+            console.log( res)
         })
         
     };
