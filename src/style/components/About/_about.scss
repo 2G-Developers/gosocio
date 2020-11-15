@@ -93,3 +93,9 @@
     display: flex !important;
     height: 100%;
 }
+
+.order {
+    @include respond(phone) { // width < 900?
+        order: -1;
+    }
+}

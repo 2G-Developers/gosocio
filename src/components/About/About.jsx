@@ -149,7 +149,7 @@ think, envision and create with you to build a strong digital future.</p>
                             </Slider>
                         </div>
                     </div>
-                    <div className="col-md-8" style={{padding: 0}}>
+                    <div className="col-md-8 order" style={{padding: 0}}>
                         <div  data-aos="zoom-in" className="about__wrapper">
                             <Slider {...singleSettings}>
                                 <div id="test1" className="about__img">
@@ -227,7 +227,7 @@ think, envision and create with you to build a strong digital future.</p>
                             </Slider>
                         </div>
                     </div>
-                    <div className="col-md-8" style={{padding: 0}}>
+                    <div className="col-md-8 order" style={{padding: 0}}>
                         <div  data-aos="zoom-in" className="about__wrapper">
                             <Slider {...singleSettings}>
                                 <div className="about__img">
