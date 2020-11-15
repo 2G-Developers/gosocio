@@ -13,7 +13,7 @@ import AboutMobile from '../../images/2_Mobile.jpg'
 function AboutPage() {
     return (
         <>
-            <Navbar isSecondary={true} class2="navbar-list-active"/>
+            <Navbar isSecondary={true} class2="navbar-list-active" color="#000"/>
             {/* <Carousel images={contact} altText="Contact" heading="Moving businesses, customers and the world forward with creative digital products!" /> */}
             <Carousel images={About} 
                 imagesMobile={AboutMobile} />

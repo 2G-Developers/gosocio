@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from '../../images/logo.svg'
 import logo2 from '../../images/logo-2.svg'
 
-function Navbar({isSecondary,class1="navbar-list", class2="navbar-list", class3="navbar-list"}){
+function Navbar({isSecondary,class1="navbar-list", class2="navbar-list", class3="navbar-list",color='#fff'}){
     const [showNav,setShownav ] = useState(false);
     const [navbar, setNavbar] = useState(false);
 
@@ -21,7 +21,7 @@ function Navbar({isSecondary,class1="navbar-list", class2="navbar-list", class3=
 
     <div className="nav">
 
-    <div className={navbar ? 'navbar active-nav': 'navbar'} style={{background: `${isSecondary && navbar ? '#000' : 'transparent'}`}}>
+    <div className={navbar ? 'navbar active-nav': 'navbar'} style={{background: `${ navbar ? color : 'transparent'}`}}>
         {isSecondary ? null : <Link to="/"><img className="logo" src={logo} alt="logo"/></Link> }
         {isSecondary ? <Link to="/"><img className="logo" src={logo2} alt="logo"/></Link> : null }
         <div className="navbar-hamburg" onClick={()=>setShownav(!showNav)}>
