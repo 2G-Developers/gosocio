@@ -1,42 +1,59 @@
 import React, { useState } from 'react'
 import Dropdown from '../Dropdown/Dropdown';
 import ArrowRightCircle from '../../images/arrow-right-circle.svg'
+import { useForm } from "react-hook-form";
 
 function Enquiry() {
     const [enquiriesChecked, setEnquiriesChecked] = useState(true);
+    const [dropdownValue, setdropdownValue] = useState('')
+
+    const { register, handleSubmit, errors } = useForm();
+
+    const onSubmit = data => {
+        enquiriesChecked ? data.type = "Enquiry": data.type = "J";
+        enquiriesChecked ? delete data.job: data.job = dropdownValue;
+
+        fetch('https://www.gosociobutterfly.com/registerSocio.php', {
+            method: 'POST',
+            body: JSON.stringify(data)
+        })
+        .then(function(res) {
+            return res.json()
+        })
+        .then(function(data) {
+            console.log("sent", data)
+        })
+        
+    };
     
     const tabForm = () => {
         if(enquiriesChecked) {
             return (
-                <div className="enquiry__pane mt-4">
-                    <form>
-                        <div className="enquiry__form">
-                            <input type="text" className="enquiry__input" placeholder="First Name" />
-                            <input type="text" className="enquiry__input" placeholder="Last Name" />
-                            <input type="text" className="enquiry__input" placeholder="Company Name" />
-                        </div>
-                        <div className="enquiry__form mt-5">
-                            <input type="text" className="enquiry__input" placeholder="Email address" />
-                            <input type="text" className="enquiry__input" placeholder="Phone" />
-                        </div>
-                    </form>
-                </div>
+                <>
+                    <div className="enquiry__form">
+                        <input type="text" style={{borderColor: `${errors.fname ? 'red': ''}`}} className="enquiry__input" name="fname" placeholder="First Name" ref={register({required: true, minLength: 2, pattern: /^[A-Za-z]+$/i})} />
+                        <input type="text" style={{borderColor: `${errors.lname ? 'red': ''}`}} className="enquiry__input" name="lname" placeholder="Last Name" ref={register({required: true, minLength: 2, pattern: /^[A-Za-z]+$/i})} />
+                        <input type="text" style={{borderColor: `${errors.company ? 'red': ''}`}} className="enquiry__input" name="company" placeholder="Company Name" ref={register({required: true})} />
+                    </div>
+                    <div className="enquiry__form" style={{marginTop: "5rem"}}>
+                        <input type="email" style={{borderColor: `${errors.email ? 'red': ''}`}} className="enquiry__input" name="email" placeholder="Email address" ref={register({required: true, minLength: 2})} />
+                        <input type="tel" style={{borderColor: `${errors.phone ? 'red': ''}`}} className="enquiry__input" name="phone" placeholder="Phone" ref={register({required: true, minLength: 2, maxLength: 12, pattern: /^[0-9]+$/i})} />
+                    </div>
+                </>
             )
         } else {
             return (
-                <div className="enquiry__pane mt-4">
-                    <form>
-                        <div className="enquiry__form">
-                            <input type="text" className="enquiry__input" placeholder="First Name" />
-                            <input type="text" className="enquiry__input" placeholder="Last Name" />
-                            <Dropdown />
-                        </div>
-                        <div className="enquiry__form">
-                            <input type="text" className="enquiry__input" placeholder="Email address" />
-                            <input type="text" className="enquiry__input" placeholder="Phone" />
-                        </div>
-                    </form>
-                </div>
+                <>
+                    <div className="enquiry__form">
+                        <input type="text" style={{borderColor: `${errors.fname ? 'red': ''}`}} className="enquiry__input" name="fname" placeholder="First Name" ref={register({required: true, minLength: 2, pattern: /^[A-Za-z]+$/i})} />
+                        <input type="text" style={{borderColor: `${errors.lname ? 'red': ''}`}} className="enquiry__input" name="lname" placeholder="Last Name" ref={register({required: true, minLength: 2, pattern: /^[A-Za-z]+$/i})} />
+                        <Dropdown setdropdownValue={setdropdownValue} dropdownValue={dropdownValue} />
+                    </div>
+                    <div className="enquiry__form" style={{marginTop: "5rem"}}>
+                        <input type="email" style={{borderColor: `${errors.email ? 'red': ''}`}} className="enquiry__input" name="email" placeholder="Email address" ref={register({required: true, minLength: 2})} />
+                        <input type="tel" style={{borderColor: `${errors.phone ? 'red': ''}`}} className="enquiry__input" name="phone" placeholder="Phone" ref={register({required: true, minLength: 10, maxLength: 12, pattern: /^[0-9]+$/i})} />
+                    </div>
+                </>
             )
         }
     }
@@ -58,11 +75,16 @@ function Enquiry() {
                                 </li>
                             </ul>
                             <div className="enquiry__content">
-                                { tabForm() }
-                            </div>
-                            <div className="enquiry__button">
-                                <span className="enquiry__button--text">Send</span>
-                                <img  className="enquiry__button--img" src={ArrowRightCircle} alt="Arrow right circle"/>
+                                <div className="enquiry__pane mt-4">
+                                    <form onSubmit={handleSubmit(onSubmit)}>
+                                        { tabForm() }
+
+                                        <div className="enquiry__button">
+                                            <input type="submit" value="Send" className="enquiry__button--text" />
+                                            <img  className="enquiry__button--img" src={ArrowRightCircle} alt="Arrow right circle"/>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>

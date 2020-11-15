@@ -5,10 +5,6 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         grid-gap: 2rem;
-        
-        &:last-child {
-            margin-top: 5rem !important;
-        }
     }
 
     &__input {
@@ -62,6 +58,9 @@
         &--text {
             padding-right: 0.5rem;
             cursor: pointer;
+            border: none;
+            outline: none;
+            background: transparent;
         }
         &--img {
             cursor: pointer;

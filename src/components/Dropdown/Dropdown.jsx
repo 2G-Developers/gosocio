@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 
-function Dropdown() {
+function Dropdown({setdropdownValue,dropdownValue}) {
     const [dropdownToggle, setDropdownToggle] = useState(false);
-
-    const [dropdownValue, setdropdownValue] = useState('')
 
     function onDropdownData(e) {
         let value = e.target.dataset['value']
