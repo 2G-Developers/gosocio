@@ -20,12 +20,22 @@ function Enquiry() {
         // .then(function(res) {
         //     console.log( res)
         // })
+        var form_data = new FormData();
 
+        for ( var key in data ) {
+            form_data.append(key, data[key]);
+        }
 var requestOptions = {
   method: 'POST',
-  body: JSON.stringify(data),
+  body: form_data,
   redirect: 'follow'
 };
+
+fetch("https://www.gosociobutterfly.com/registerSocio.php", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+    
 
 fetch("https://www.gosociobutterfly.com/register.php", requestOptions)
   .then(response => response.text())
