@@ -96,7 +96,7 @@ think, envision and create with you to build a strong digital future.</p>
                                     <img src={ammus} className="img-fluid small-margin" alt="ammus" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={amaas} className="img-fluid small-margin" alt="Amaas" />
+                                    <img src={Skylon2} className="img-fluid small-margin" alt="Amaas" />
                                 </div>
                                 <div className="about__img">
                                     <img src={arjee} className="img-fluid small-margin" alt="arjee" />
@@ -156,7 +156,7 @@ think, envision and create with you to build a strong digital future.</p>
                                     <img src={raziya} className="img-fluid small-margin" alt="Raziya" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={Skylon2} className="img-fluid small-margin" alt="skylon" />
+                                    <img src={amaas} className="img-fluid small-margin" alt="skylon" />
                                 </div>
                                 <div className="about__img">
                                     <img src={eclectic} className="img-fluid small-margin" alt="Skylon" />
@@ -180,7 +180,7 @@ think, envision and create with you to build a strong digital future.</p>
                                     <img src={sooja} className="img-fluid small-margin" alt="pooja" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={amaas} className="img-fluid small-margin" alt="amaas" />
+                                    <img src={Skylon2} className="img-fluid small-margin" alt="amaas" />
                                 </div>
                                 <div className="about__img">
                                     <img src={ammus} className="img-fluid small-margin" alt="ammus" />
@@ -240,7 +240,7 @@ think, envision and create with you to build a strong digital future.</p>
                                     <img src={raziya} className="img-fluid small-margin" alt="Sooja" />
                                 </div>
                                 <div className="about__img">
-                                    <img src={Skylon2} className="img-fluid small-margin" alt="Skylon" />
+                                    <img src={amaas} className="img-fluid small-margin" alt="Skylon" />
                                 </div>
                             </Slider>
                         </div>
