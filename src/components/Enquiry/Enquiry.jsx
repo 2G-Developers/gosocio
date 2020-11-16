@@ -9,10 +9,7 @@ function Enquiry() {
     const [isMailSent, setMailSent] = useState(false);
 
     const toastStyle = {
-        "position": "fixed",
-        "zIndex": "1000",
-        "bottom": "0",
-        "right": "0"
+        "marginTop": "1rem"
     }
 
     const { register, handleSubmit, errors } = useForm();
@@ -38,10 +35,6 @@ function Enquiry() {
             
             setMailSent(prevState => !prevState)
 
-            setTimeout(function() {
-                setMailSent(prevState => !prevState)
-            }, 2000)
-
             fetch("/register.php", requestOptions)
             .then(response => response.text())
             .then(result => e.target.reset())
@@ -63,7 +56,7 @@ function Enquiry() {
                     </div>
                     <div className="enquiry__form" style={{marginTop: "5rem"}}>
                         <input type="email" style={{borderColor: `${errors.email ? 'red': ''}`}} className="enquiry__input" name="email" placeholder="Email address" ref={register({required: true, minLength: 2})} />
-                        <input type="tel" style={{borderColor: `${errors.phone ? 'red': ''}`}} className="enquiry__input" name="phone" placeholder="Phone" ref={register({required: true, minLength: 2, maxLength: 12, pattern: /^[0-9]+$/i})} />
+                        <input type="tel" style={{borderColor: `${errors.phone ? 'red': ''}`}} className="enquiry__input" name="phone" placeholder="Phone" ref={register({required: true, minLength: 2, pattern: /^[0-9+]+$/i})} />
                     </div>
                 </>
             )
@@ -77,7 +70,7 @@ function Enquiry() {
                     </div>
                     <div className="enquiry__form" style={{marginTop: "5rem"}}>
                         <input type="email" style={{borderColor: `${errors.email ? 'red': ''}`}} className="enquiry__input" name="email" placeholder="Email address" ref={register({required: true, minLength: 2})} />
-                        <input type="tel" style={{borderColor: `${errors.phone ? 'red': ''}`}} className="enquiry__input" name="phone" placeholder="Phone" ref={register({required: true, minLength: 10, maxLength: 12, pattern: /^[0-9]+$/i})} />
+                        <input type="tel" style={{borderColor: `${errors.phone ? 'red': ''}`}} className="enquiry__input" name="phone" placeholder="Phone" ref={register({required: true, minLength: 10, pattern: /^[0-9+]+$/i})} />
                     </div>
                 </>
             )
@@ -106,8 +99,8 @@ function Enquiry() {
                                         { tabForm() }
 
                                         <div className="enquiry__button">
-                                            <input type="submit" value="Send" className="enquiry__button--text" />
-                                            <img  className="enquiry__button--img" src={ArrowRightCircle} alt="Arrow right circle"/>
+                                            <button type="submit" className="enquiry__button--text" >Send <img  className="enquiry__button--img" src={ArrowRightCircle} alt="Arrow right circle"/></button>
+                                            
                                         </div>
                                     </form>
                                 </div>

@@ -5,7 +5,7 @@ import hair from '../../images/hair-client.png'
 import raziya from '../../images/raziya-client.svg'
 import Untold from '../../images/untolod-client.png'
 import sangeetha from '../../images/sangeetha-client.png'
-import skylon from '../../images/skylon-client.png'
+import skylon from '../../images/skylon-client.svg'
 import Ammus from '../../images/ammus-client.png'
 import Couchy from '../../images/couchy-client.png'
 import Slider from "react-slick";
@@ -61,30 +61,30 @@ function Contact({isgrey}) {
                         <h2 className="heading">Our Awesome Clients</h2>
                         <div className="contact__carousel">
                             <Slider {...settings}>
+                                <div className="contact__image">
+                                    <img src={skylon} alt="Raziya" className="img-fluid" />
+                                </div>
 
                                 <div className="contact__image">
-                                    <img src={Untold} alt="Untold" className="img-fluid"/>
+                                    <img src={Untold} alt="Untold" className="img-fluid" style={{width: "215px"}}/>
                                 </div>
                                 <div className="contact__image">
-                                    <img src={arjeeSvg} alt="Arjee" className="img-fluid"/>
+                                    <img src={arjeeSvg} alt="Arjee" className="img-fluid" style={{width: "215px"}}/>
                                 </div>
                                 <div className="contact__image">
-                                    <img src={hair} alt="The Hair Experts" className="img-fluid"/>
+                                    <img src={hair} alt="The Hair Experts" className="img-fluid" style={{width: "215px"}}/>
                                 </div>
                                 <div className="contact__image">
-                                    <img src={raziya} alt="Raziya" className="img-fluid"/>
+                                    <img src={raziya} alt="Raziya" className="img-fluid" style={{width: "215px"}}/>
                                 </div>
                                 <div className="contact__image">
-                                    <img src={sangeetha} alt="Raziya" className="img-fluid"/>
+                                    <img src={sangeetha} alt="Raziya" className="img-fluid" style={{width: "190px"}}/>
                                 </div>
                                 <div className="contact__image">
-                                    <img src={skylon} alt="Raziya" className="img-fluid"/>
+                                    <img src={Ammus} alt="Raziya" className="img-fluid" style={{width: "215px"}}/>
                                 </div>
                                 <div className="contact__image">
-                                    <img src={Ammus} alt="Raziya" className="img-fluid"/>
-                                </div>
-                                <div className="contact__image">
-                                    <img src={Couchy} alt="Raziya" className="img-fluid"/>
+                                    <img src={Couchy} alt="Raziya" className="img-fluid" style={{width: "215px"}}/>
                                 </div>
                             </Slider>
                         </div>

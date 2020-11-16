@@ -12,8 +12,8 @@ function Dropdown({setdropdownValue,dropdownValue}) {
     }
 
     return (
-        <div className="dropdown__select">
-            <div className="dropdown__form-group" onClick={() => setDropdownToggle(prevState => !prevState)} style={{borderBottom: "1px solid #cbcbcb"}}>
+        <div className="dropdown__select" style={{borderBottom: "1px solid #cbcbcb"}}>
+            <div className="dropdown__form-group" onClick={() => setDropdownToggle(prevState => !prevState)}>
                 <input type="text" className="dropdown__input" value={dropdownValue} disabled placeholder="Job Role" />
                 <div className={`arrow ${dropdownToggle ? 'arrow--rotate':''}`}>
                     <svg width="10" height="10" viewBox="0 0 39 23" fill="none">

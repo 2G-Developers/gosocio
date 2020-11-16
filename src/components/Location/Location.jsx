@@ -21,8 +21,8 @@ function Location() {
                                     <p><Call width="16px" height="16px" fill="#EB4D37" /> +918939907815</p>
                                 </a>
                                 <p className="location__address">
-                                    <LocationIcon width="16px" height="16px" fill="#EB4D37" /> 
-                                    <span className="p-0">The Executive Zone, Shakti Towers-1, <br />
+                                    <LocationIcon width="18px" height="18px" fill="#EB4D37" /> 
+                                    <span className="p-0"> The Executive Zone, Shakti Towers-1, <br />
                                     </span><span className="pl-3">
                                     766, Anna Salai, Chennai - 600002.</span>
                                 </p>
